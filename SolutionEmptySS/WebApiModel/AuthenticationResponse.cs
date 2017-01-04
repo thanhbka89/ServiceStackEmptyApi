@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace WebApiModel
 {
-    public class Class1
+    public class AuthenticationResponse
     {
+        public string Message { get; set; }
     }
 }

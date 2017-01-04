@@ -144,6 +144,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiServices\AuthenticationService.cs" />
+    <Compile Include="ApiServices\StatusService.cs" />
     <Compile Include="AppHost.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -158,9 +160,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Requests.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Status\StatusRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApiModel\WebApiModel.csproj">
+      <Project>{50fc117b-494b-4d62-b799-251a1966ce02}</Project>
+      <Name>WebApiModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
